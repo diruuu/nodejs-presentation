@@ -2,15 +2,12 @@ import React from "react";
 
 import {
   Appear, BlockQuote, Cite, Deck, Fill, CodePane,
-  Heading, Image, Layout, Link, ListItem, List, Quote, Slide,
-  TableBody, TableHeader, TableHeaderItem, TableItem, TableRow, Table, Text
+  Heading, Image, Layout, ListItem, List, Quote, Slide, Text
 } from "spectacle";
 
 import preloader from "spectacle/lib/utils/preloader";
 
 import createTheme from "spectacle/lib/themes/default";
-
-import Interactive from "../assets/interactive";
 
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
@@ -34,7 +31,7 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} theme={theme} transitionDuration={500}>
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading bgColor="white" size={1} fit caps lineHeight={1} textColor="black">
-            Node JS No-deep-shit
+            NodeJS No-deep-shit
           </Heading>
           <Text textSize="1.3em" margin="20px 0px 0px" textColor="white" textFont="Open Sans">An Introduction to NodeJS</Text>
           <Text textSize="1em" margin="70px 0px 0px" textColor="black" textFont="Open Sans">By Rudi Wahyudi</Text>
@@ -221,7 +218,7 @@ import Module from 'path-to-module';
             <Appear><ListItem>It is very lightweight and fast</ListItem></Appear>
             <Appear><ListItem>The counter is really easy to make tobe realtime</ListItem></Appear>
             <Appear><ListItem>Easy to configure</ListItem></Appear>
-            <Appear><ListItem>Almost modules available for free</ListItem></Appear>
+            <Appear><ListItem>Most of the modules available for free</ListItem></Appear>
             <Appear><ListItem>Works with NoSQL as well</ListItem></Appear>
           </List>
         </Slide>
@@ -250,6 +247,81 @@ import Module from 'path-to-module';
             CPU Time on Intensive Request
           </Heading>
           <Image height="400px" src="https://cloud.githubusercontent.com/assets/6884679/23047043/bd684e9c-f4df-11e6-87f1-1335ac2a69dd.png" />
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+          <Heading size={4} fit textColor="tertiary">
+            Some success stories
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="#2d3238">
+          <Heading size={4} textColor="tertiary">
+            Ebay & Paypal
+          </Heading>
+          <Text lineHeight={1.3} textAlign="left" textSize="0.8em" margin="20px 0px 0px" textColor="white" textFont="Open Sans">
+            Moved their application from java to NodeJS. It’s become a great prototype platform and they chose to go on production. From their own testing they got the data that the node.js app was:
+            <ul>
+              <li>Built almost twice as fast with fewer people.</li>
+              <li>Written in 33% fewer lines of code.</li>
+              <li>Constructed with 40% fewer files.</li>
+            </ul>
+          </Text>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="#2d3238">
+          <Heading size={4} textColor="tertiary">
+            Linkedin
+          </Heading>
+          <Text lineHeight={1.3} textAlign="left" textSize="0.8em" margin="20px 0px 0px" textColor="white" textFont="Open Sans">
+            After switching to node.js the Linkedin development team realized the advantages.
+            <ul>
+              <li>Much better performance and lower memory overhead than other tested options, running up to 20x faster in some scenarios</li>
+              <li>Programmers could leverage their JavaScript skills.</li>
+              <li>Frontend and backend mobile teams could be combined into a single unit.</li>
+              <li>Servers were cut to 3 from 30. Enough headroom remains to handle 10x current levels of resource utilization.</li>
+              <li>Development could focus more on application development than firefighting.</li>
+            </ul>
+          </Text>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="#2d3238">
+          <Heading size={4} textColor="tertiary">
+            Uber
+          </Heading>
+          <Text lineHeight={1.3} textAlign="left" textSize="0.8em" margin="20px 0px 0px" textColor="white" textFont="Open Sans">
+            The three core strengths that made Node.js a particularly good fit for Uber include:
+            <ul>
+              <li>Node.js handles asynchronous I/O requests with a non-blocking, single-threaded event loop. It is particularly well-suited to distributed systems that make a lot of network requests.</li>
+              <li>Node.js — and JavaScript in general — is excellent for quick iteration; programs can be inspected and errors can be addressed on the fly without requiring a restart, so developers can publish and deploy new code constantly.</li>
+              <li>The active open source community continuously optimizes the technology; it gets better, all the time, practically on its own.</li>
+            </ul>
+          </Text>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="#2d3238">
+          <Heading size={4} textColor="tertiary">
+            Other Big Companies Using NodeJS
+          </Heading>
+          <Layout>
+            <Fill>
+              <ul style={{ textAlign: "left", color: "#fff" }}>
+                <li>Google</li>
+                <li>Walmart</li>
+                <li>Netflix</li>
+                <li>Groupon</li>
+                <li>Wall street journal</li>
+                <li>GoDaddy</li>
+                <li>Quizlet</li>
+              </ul>
+            </Fill>
+            <Fill>
+              <ul style={{ textAlign: "left", color: "#fff" }}>
+                <li>Medium</li>
+                <li>Pinterest</li>
+                <li>InVision</li>
+                <li>Fitbit</li>
+                <li>Atlassian</li>
+                <li>Slack</li>
+                <li>Flickr</li>
+              </ul>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["zoom", "fade"]} bgColor="primary">
           <Heading size={4} fit textColor="tertiary">
