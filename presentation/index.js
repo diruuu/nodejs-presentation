@@ -71,6 +71,7 @@ console.log("30" + 7); // 307`}
           <Heading size={4} fit textColor="tertiary">
             Javascript is everywhere
           </Heading>
+          <Image height="300px" src="http://vignette4.wikia.nocookie.net/matrix/images/7/71/Agent_Smith_Clone.jpg/revision/latest?cb=20130211005723" />
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
           <Heading textColor="white" size={4} margin="0px 0px 50px">Javascript on Server Side</Heading>
