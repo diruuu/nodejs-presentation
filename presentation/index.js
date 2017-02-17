@@ -233,10 +233,10 @@ import Module from 'path-to-module';
           <Heading size={4} textColor="tertiary">
             When Not To Use NodeJS
           </Heading>
-          <List>
-            <Appear><ListItem>Your server request is dependent on heavy CPU consuming algorithm/job</ListItem></Appear>
-            <Appear><ListItem>NodeJS is single threaded by default. You have to write your own logic to utilize multicore processor.</ListItem></Appear>
-          </List>
+          <ul style={{ textAlign: "left", fontSize: "1.3em" }}>
+            <Appear><li>Your server request is dependent on heavy CPU consuming algorithm/job</li></Appear>
+            <Appear><li>NodeJS is single threaded by default. You have to write your own logic to utilize multicore processor.</li></Appear>
+          </ul>
         </Slide>
         <Slide transition={["zoom", "fade"]} bgColor="primary">
           <Heading size={4} fit textColor="tertiary">
@@ -334,6 +334,28 @@ import Module from 'path-to-module';
           <Heading size={4} fit textColor="tertiary">
             Time to learn NodeJS!
           </Heading>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="#2d3238">
+          <Heading size={4} textColor="tertiary">
+            Simple Realtime Chat
+          </Heading>
+          <Text lineHeight={1.3} textAlign="left" textSize="0.8em" margin="20px 0px 0px" textColor="white" textFont="Open Sans">
+            Lets create a simple chat app using NodeJS, so you get the idea:
+          </Text>
+          <ul style={{ textAlign: "left", color: "#fff", fontFamily: "Open Sans", fontSize: "0.8em" }}>
+            <li>How to create http server using expressJS</li>
+            <li>How to use npm package manager</li>
+            <li>How to import and export modules</li>
+            <li>How to create realtime request using websocket</li>
+          </ul>
+          <Text lineHeight={1.3} textAlign="left" textSize="0.8em" margin="20px 0px 0px" textColor="white" textFont="Open Sans">
+            We will use module:
+          </Text>
+          <ul style={{ textAlign: "left", color: "#fff", fontFamily: "Open Sans", fontSize: "0.8em" }}>
+            <li>ExpressJS to create server</li>
+            <li>jQuery to help on client side</li>
+            <li>Socket IO to serve websocket on server and client</li>
+          </ul>
         </Slide>
         {/* <Slide transition={["slide"]} bgColor="primary"
           notes="Hard to find cities without any pizza"
