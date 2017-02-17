@@ -73,10 +73,11 @@ console.log("30" + 7); // 307`}
           </Heading>
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading textColor="white" size={4} margin="0px 0px 50px">Javascript on Server Side</Heading>
           <Image height="200px" src="https://lodejs.org/images/logo.svg" />
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading fit margin="0px 0px 50px">Javascript as Native App</Heading>
+          <Heading textColor="white" size={4} margin="0px 0px 50px">Javascript as Native App</Heading>
           <Layout>
             <Fill>
               <Image width="100%" src="https://www.novoda.com/blog/content/images/2016/06/reactive-nativingitup-png-800x600_q96.png" />
@@ -86,7 +87,12 @@ console.log("30" + 7); // 307`}
             </Fill>
           </Layout>
         </Slide>
+        <Slide transition={["slide", "spin"]} bgColor="white">
+          <Heading textColor="#333" size={4} margin="0px 0px 50px">Javascript to Build Game</Heading>
+          <Image height="200px" src="http://www.download.net.pl/upload/News%20November%202014/Unity%20gry/Unity-Logo.png" />
+        </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading textColor="white" size={4} margin="0px 0px 50px">Javascript on Robot Programming</Heading>
           <Image height="400px" src="https://i.gyazo.com/8104bad6c03e6a786c8e321ce7f2ca13.png" />
         </Slide>
         <Slide transition={["zoom", "fade"]} bgColor="#eb6361">
